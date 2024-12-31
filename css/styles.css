@@ -1,0 +1,519 @@
+/* Загальний стиль */
+body {
+  font-family: "Roboto", sans-serif; /* Шрифт для всього тексту */
+  color: #434455; /* Колір тексту */
+  background-color: #ffffff; /* Колір фону */
+}
+
+/* Головний стиль для хедера */
+.main-header {
+  border-bottom: 1px solid #e7e9fc; /* Нижня рамка */
+}
+
+/* Стиль для списку контактів */
+.contact-items {
+  display: flex; /* Розташовує елементи списку горизонтально */
+  gap: 40px; /* Встановлює відступи між пунктами списку */
+  padding: 0; /* Вимикає внутрішні відступи списку */
+  margin: 0; /* Скидає зовнішні відступи списку */
+  list-style: none; /* Вимикає маркери списку */
+  font-style: normal; /* Встановлює нормальний стиль шрифта */
+}
+
+/* Обнулення margin для останнього елемента списку */
+.contact-items li:last-child {
+  margin-right: 0; /* Для останнього елемента немає відступу справа */
+}
+
+.header-container {
+  width: 1158px; /* Встановлює фіксовану ширину */
+  margin: 0 auto; /* Центрування на сторінці */
+  padding: 0 15px 0 15px; /* Внутрішні відступи з повним записом */
+  display: flex; /* Гнучке розміщення елементів */
+  justify-content: space-between; /* Розташування навігації та контактів по краях */
+  align-items: center; /* Вирівнювання по вертикалі */
+}
+
+.logo {
+  margin-right: 76px; /* Встановлює відступ справа від логотипа */
+}
+
+/* Дефолтний клас container для стандартизації розмірів */
+.container {
+  width: 1158px; /* Встановлює фіксовану ширину для контенту */
+  margin: 0 auto; /* Центрування контейнера на сторінці */
+  padding: 0 15px; /* Внутрішні відступи з обох боків */
+}
+
+.nav-container {
+  display: flex; /* Використовує flex для горизонтального розміщення елементів */
+  align-items: center; /* Вирівнює елементи по вертикалі */
+}
+
+/* Логотип: хедер і футер */
+.webstudio-link {
+  font-family: "Raleway", sans-serif; /* Шрифт для посилання */
+  font-weight: 700; /* Жирність шрифту */
+  font-size: 18px; /* Розмір шрифту */
+  line-height: 1.17; /* Висота рядка */
+  letter-spacing: 0.03em; /* Відстань між літерами */
+  text-transform: uppercase; /* Перетворює текст на великі літери */
+  color: #4d5ae5; /* Колір тексту */
+  text-decoration: none; /* Вимикає підкреслення */
+  display: inline-block;
+}
+
+.webstudio-link-footer {
+  font-family: "Raleway", sans-serif; /* Шрифт для посилання */
+  font-weight: 700; /* Жирність шрифту */
+  font-size: 18px; /* Розмір шрифту */
+  line-height: 1.17; /* Висота рядка */
+  letter-spacing: 0.03em; /* Відстань між літерами */
+  text-transform: uppercase; /* Перетворює текст на великі літери */
+  color: #4d5ae5; /* Колір тексту */
+  text-decoration: none; /* Вимикає підкреслення */
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.logo-span,
+.logo-span-footer {
+  color: #2e2f42; /* Колір тексту для логотипа */
+}
+
+/* Стиль для навігаційних посилань */
+.nav-link {
+  font-weight: 500; /* Жирність */
+  font-size: 16px; /* Розмір шрифту */
+  line-height: 1.5; /* Висота рядка */
+  letter-spacing: 0.02em; /* Відстань між літерами */
+  color: #2e2f42; /* Колір тексту */
+  text-decoration: none; /* Вимикає підкреслення */
+  padding: 24px 0; /* Встановлює вертикальні відступи по 24px для всіх посилань у меню */
+  display: block;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf; /* Колір при наведенні або фокусі */
+}
+
+/* Стиль для посилання в контактах */
+.contact-link {
+  font-size: 16px; /* Розмір шрифту */
+  line-height: 1.5; /* Висота рядка */
+  color: #434455; /* Колір тексту */
+  text-decoration: none; /* Вимикає підкреслення */
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf; /* Колір при наведенні або фокусі */
+}
+
+/* Перша секція */
+.main-section {
+  background-color: #2e2f42; /* Фон секції, задає темний колір #2e2f42 */
+  text-align: center; /* Вирівнює текст по центру по горизонталі */
+  padding: 188px 0; /* Встановлює відступи: 188px зверху і знизу, 0px з боків */
+  display: flex; /* Включає Flexbox для управління вирівнюванням вмісту */
+  flex-direction: column; /* Розташовує дочірні елементи вертикально (один під одним) */
+  align-items: center; /* Центрує дочірні елементи по горизонталі */
+  justify-content: center; /* Центрує дочірні елементи по вертикалі */
+  height: 600px; /* Фіксована висота секції — 600 пікселів */
+  top: 72px; /* Задає позицію зверху на 72 пікселі (використовується лише за умов абсолютного чи відносного позиціювання) */
+  gap: 0px; /* Відстань між дочірніми елементами у Flexbox (0 пікселів) */
+  opacity: 0px; /* Прозорість елемента, встановлена в 0 (повністю прозорий) */
+  width: 100%; /* Займає всю ширину екрана */
+}
+
+.section-title {
+  font-size: 56px; /* Розмір шрифту */
+  font-weight: 700; /* Жирність шрифту */
+  max-width: 496px; /* Визначення ширини тексту */
+  line-height: 1.2; /* Висота рядка */
+  letter-spacing: 0.02em; /* Відстань між літерами */
+  color: #ffffff; /* Колір тексту */
+  margin: 0 auto 48px; /* Центрування та відступ знизу */
+  text-align: center; /* Вирівнювання тексту по центру */
+  gap: 0px; /* Відстань між дочірніми елементами (для flex/grid контейнерів) */
+}
+
+.action-button {
+  display: block; /* Встановлює блочний режим для можливості центрування через margin */
+  min-width: 105px; /* Мінімальна ширина кнопки */
+  height: 56px; /* Загальна висота кнопки, залишаємо незмінною для зручності */
+  border: none; /* Видаляє стандартну рамку кнопки */
+  padding: 16px 24px; /* Відступи всередині кнопки для вирівнювання тексту */
+  background-color: var(--primary-color, #4d5ae5); /* Фон кнопки */
+  border-radius: 4px; /* Заокруглення країв кнопки */
+  cursor: pointer; /* Змінює курсор на "вказівник руки" при наведенні */
+  margin: 0 auto; /* Центрування кнопки автоматичним марженом */
+
+  min-width: 169px;
+
+  /* Стилі тексту */
+  font-family: "Roboto", sans-serif; /* Шрифт */
+  font-size: 16px; /* Розмір шрифту */
+  font-weight: 500; /* Напівжирний текст */
+  line-height: 24px; /* Висота рядка */
+  letter-spacing: 0.04em; /* Відстань між літерами */
+  text-align: left; /* Вирівнювання тексту по лівому краю */
+  color: #ffffff; /* Колір тексту */
+  text-decoration: none; /* Видаляє підкреслення */
+  text-underline-position: from-font; /* Позиція підкреслення */
+  text-decoration-skip-ink: none; /* Зберігає вигляд підкреслення навколо символів */
+  transition: background-color 0.3s; /* Анімація для зміни кольору */
+}
+
+.action-button:hover {
+  background-color: #3a46c0; /* Зміна фону кнопки при наведенні */
+}
+
+.action-button:hover,
+.action-button:focus {
+  background-color: #404bbf; /* Колір фону при наведенні або фокусі */
+}
+
+/* Section №2 */
+.two-section {
+  padding: 120px 0; /* Відступи зверху та знизу */
+}
+
+/* Друга секція */
+.list-title {
+  font-weight: 500; /* Жирність */
+  font-size: 20px; /* Розмір шрифту */
+  line-height: 1.2; /* Висота рядка */
+  letter-spacing: 0.02em; /* Відстань між літерами */
+  color: #2e2f42; /* Колір тексту */
+  margin-bottom: 8px; /* 10px Відступ від наступного елемента */
+}
+
+.list-paragraph {
+  font-size: 16px; /* Розмір шрифту */
+  line-height: 1.5; /* Висота рядка */
+  letter-spacing: 0.02em; /* Відстань між літерами */
+  color: #434455; /* Колір тексту */
+  margin: 0; /* Без додаткових відступів */
+}
+
+/* Визначення gap між елементами списку */
+.list-section-two {
+  flex-basis: calc((100% - 72px) / 4); /* Ширина елементів списку */
+  padding-left: 0;
+}
+
+.list-section-two:last-child {
+  margin-right: 0; /* Для останнього елемента відступ обнуляється */
+}
+
+.list-section-two.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* Відступи між елементами списку */
+}
+
+.team-section {
+  background-color: #f4f4fd; /* Фон секції */
+}
+
+/* Паттерн для приховання заголовка */
+.visually-hidden {
+  position: absolute; /* Розміщує елемент абсолютно по відношенню до найближчого батьківського елемента, що має позицію */
+  width: 1px; /* Встановлює ширину елемента в 1 піксель */
+  height: 1px; /* Встановлює висоту елемента в 1 піксель */
+  margin: -1px; /* Встановлює відступи навколо елемента, ефективно зміщуючи його */
+  border: 0; /* Відключає будь-які межі елемента */
+  padding: 0; /* Відключає внутрішні відступи */
+  white-space: nowrap; /* Перешкоджає обриву рядків всередині елемента */
+  clip-path: inset(100%); /* Застосовує маску, що ховає весь вміст елемента */
+  clip: rect(0 0 0 0); /* Інший спосіб маскування вмісту, схожий на clip-path */
+  overflow: hidden; /* Ховає будь-який вміст, що виходить за межі елемента */
+}
+
+.team-list {
+  display: flex; /* Використовуємо Flexbox */
+  gap: 24px; /* Відступ між картками */
+  flex-wrap: wrap; /* Для адаптивності переносимо елементи на новий рядок */
+  list-style: none; /* Прибираємо маркери списку */
+  padding: 0; /* Забираємо внутрішні відступи */
+  margin: 0; /* Забираємо зовнішні відступи */
+}
+
+.menu {
+  display: flex; /* Розташування елементів меню в ряд */
+  gap: 40px; /* Встановлює відступи між пунктами меню */
+}
+
+/* Елементи списку */
+.team-item {
+  width: calc(
+    (100% - 48px) / 3
+  ); /* Встановлюємо ширину з урахуванням відступів */
+}
+
+.team-name {
+  margin: 0; /* Обнуляє всі відступи */
+  padding: 0; /* Обнуляє всі внутрішні відступи */
+  font-family: "Roboto", sans-serif; /* Шрифт для імені */
+  font-weight: 500; /* Жирність */
+  font-size: 20px; /* Розмір шрифту */
+  line-height: 1.2; /* Висота рядка */
+  letter-spacing: 0.02em; /* Відстань між літерами */
+  color: #2e2f42; /* Колір тексту */
+  margin-bottom: 8px; /* Нижній відступ */
+}
+
+/* Section №3 - Третя секція */
+/* drei */
+
+/* Контейнер для імені та посади */
+.team-info {
+  padding: 32px 0; /* Аналог: padding-top: 32px; padding-bottom: 32px; */
+  padding-bottom: 32px;
+}
+
+.drei-list-section:first-child .drei-image-container {
+  border-top-left-radius: 0px; /* Верхній лівий */
+  border-top-right-radius: 0px; /* Верхній правий */
+  border-bottom-right-radius: 4px; /* Нижній правий */
+  border-bottom-left-radius: 4px; /* Нижній лівий */
+}
+
+.drei-list-section {
+  flex-basis: calc((100% - 72px) / 4); /* Ширина елементів списку */
+  padding-left: 0; /* Відступ зліва */
+  border-radius: 0px 0px 4px 4px; /* Закруглення нижніх кутів */
+  background-color: #ffffff; /* Білий фон */
+}
+
+.drei-section {
+  padding: 120px 0; /* Відступи зверху та знизу */
+  background: #f4f4fd; /* Колір фону */
+}
+
+/* Дефолтний клас container для стандартизації розмірів */
+.drei-container {
+  width: 1158px; /* Встановлює фіксовану ширину для контенту */
+  margin: 0 auto; /* Центрування контейнера на сторінці */
+  padding: 0 15px; /* Внутрішні відступи з обох боків */
+}
+
+.drei-team-title {
+  margin-top: 0; /* Верхній відступ обнулений */
+  margin-bottom: 72px; /* Нижній відступ 72px */
+  font-family: "Roboto", sans-serif; /* Шрифт Roboto, запасний sans-serif */
+  font-size: 36px; /* Розмір шрифту 36px */
+  font-weight: 700; /* Жирність шрифту (700 — напівжирний) */
+  line-height: 40px; /* Висота рядка 40px для гармонійного розташування тексту */
+  letter-spacing: 0.02em; /* Міжлітерний інтервал (трішки розширений) */
+  text-align: center; /* Текст вирівняно по центру */
+  text-underline-position: from-font; /* Позиція підкреслення відповідно до шрифту */
+  text-decoration-skip-ink: none; /* Підкреслення не пропускає символи (наприклад, літери з нижніми елементами) */
+}
+
+.drei-team-item {
+  margin-right: 24px; /* Встановлюємо відступ між елементами */
+}
+
+.drei-team-item:last-child {
+  margin-right: 0; /* Обнуляємо відступ для останнього елемента */
+}
+
+.drei-image-container {
+  text-align: center;
+}
+
+.drei-block-image {
+  max-width: 100%; /* Зробити зображення адаптивним */
+  height: auto;
+}
+
+.drei-team-name {
+  /* Стиль заголовка H3 */
+  font-family: Roboto; /* Шрифт Roboto */
+  font-size: 20px; /* Розмір шрифту 20px */
+  font-weight: 500; /* Напівжирний шрифт */
+  line-height: 24px; /* Висота рядка 24px */
+  letter-spacing: 0.02em; /* Міжлітерний інтервал 0.02em */
+  text-align: center; /* Вирівнювання тексту по центру */
+  text-underline-position: from-font; /* Позиція підкреслення залежить від шрифту */
+  text-decoration-skip-ink: none; /* Підкреслення не пропускає чорнило */
+  margin-bottom: 8px; /* Нижній відступ 8px */
+  margin-top: 0; /* Верхній відступ 0 */
+}
+
+.drei-team-role {
+  /* Стиль тексту Body */
+  font-family: Roboto; /* Шрифт Roboto */
+  font-size: 16px; /* Розмір шрифту 16px */
+  font-weight: 400; /* Нормальна товщина шрифту */
+  line-height: 24px; /* Висота рядка 24px */
+  letter-spacing: 0.02em; /* Міжлітерний інтервал 0.02em */
+  text-align: center; /* Вирівнювання тексту по центру */
+  text-underline-position: from-font; /* Позиція підкреслення залежить від шрифту */
+  text-decoration-skip-ink: none; /* Підкреслення не пропускає чорнило */
+  color: gray; /* Сірий колір тексту */
+  margin-top: 0; /* Видаляє верхній відступ */
+  margin-bottom: 0; /* Видаляє нижній відступ */
+}
+
+/* drei END*/
+
+.team-title {
+  font-size: 36px; /* Задайте розмір шрифту заголовка */
+  font-weight: bold; /* Зробіть текст жирним (опціонально) */
+  text-align: center; /* Вирівнювання тексту (опціонально) */
+  margin-bottom: 72px; /* Відступ між заголовком і наступним елементом */
+  color: #333; /* Колір тексту */
+}
+
+/* Стиль для ролі члена команди */
+.team-role {
+  margin: 0; /* Обнуляє всі зовнішні відступи */
+  padding: 0; /* Обнуляє всі внутрішні відступи */
+  font-family: "Roboto", sans-serif; /* Шрифт для тексту */
+  font-weight: 400; /* Нормальна жирність */
+  font-size: 16px; /* Розмір шрифту */
+  line-height: 1.5; /* Висота рядка */
+  letter-spacing: 0.02em; /* Відстань між літерами */
+  color: #434455; /* Колір тексту */
+}
+
+/* Четверта секція (портфоліо) */
+.team-section-portfolio {
+  background-color: #fdfdfd; /* Фон секції */
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* Заголовок портфоліо */
+.portfolio-title {
+  font-family: "Roboto", sans-serif; /* Шрифт для заголовка */
+  font-weight: 700; /* Жирний шрифт */
+  font-size: 36px; /* Розмір шрифту */
+  line-height: 1.11; /* Висота рядка */
+  text-align: center; /* Вирівнювання по центру */
+  color: #2e2f42; /* Колір тексту */
+}
+
+/* Стиль для елементів портфоліо */
+.portfolio-item {
+  margin-bottom: 16px; /* Відступ знизу */
+}
+
+/* Назва портфоліо */
+.portfolio-name {
+  font-family: "Roboto", sans-serif; /* Шрифт для імені */
+  font-weight: 500; /* Жирність шрифту */
+  font-size: 20px; /* Розмір шрифту */
+  color: #2e2f42; /* Колір тексту */
+}
+
+/* Роль у портфоліо */
+.portfolio-role {
+  font-family: "Roboto", sans-serif; /* Шрифт для ролі */
+  font-weight: 400; /* Нормальна жирність */
+  font-size: 16px; /* Розмір шрифту */
+  color: #434455; /* Колір тексту */
+}
+
+/* Футер */
+.site-footer {
+  background-color: #2e2f42; /* Фон футера */
+  padding: 100px 0;
+}
+
+/* Опис у футері */
+.footer-description {
+  margin-top: 0; /* Обнуляє верхній марж */
+  margin-bottom: 0; /* Обнуляє нижній марж */
+  width: 264px; /* Ширина по макету */
+  font-family: "Roboto", sans-serif; /* Шрифт Roboto */
+  font-size: 16px; /* Розмір шрифту */
+  font-weight: 400; /* Товщина шрифту */
+  line-height: 24px; /* Висота рядка */
+  letter-spacing: 0.02em; /* Відстань між літерами */
+  text-align: left; /* Вирівнювання тексту по лівому краю */
+  text-underline-position: from-font; /* Позиція підкреслення від шрифта */
+  text-decoration-skip-ink: none; /* Пропуск чорнила для підкреслення */
+  color: #f4f4fd; /* Колір тексту */
+}
+
+/* Колір тексту для логотипа в футері */
+.logo-span-footer {
+  color: #f4f4fd; /* Колір тексту елемента з класом .logo-span-footer (світлий відтінок білого) */
+  margin-bottom: 16px; /* Відступ знизу між цим елементом і наступним (наприклад, параграфом) */
+}
+
+/* Зображення - блочний контейнер */
+.image-container {
+  max-width: 600px; /* Максимальна ширина контейнера */
+  padding-left: 15px; /* Відступ зліва */
+  padding-right: 15px; /* Відступ справа */
+  margin-left: auto; /* Центрування контейнера */
+  margin-right: auto; /* Центрування контейнера */
+}
+
+/* Стиль для зображення */
+.block-image {
+  display: block; /* Перетворює зображення на блоковий елемент */
+  width: 100%; /* Зображення займатиме всю ширину контейнера */
+  height: auto; /* Зберігає пропорції зображення */
+}
+
+/* Четверта секція */
+
+.container-vier {
+  width: 1158px; /* Встановлює фіксовану ширину для контейнера */
+  margin: 0 auto; /* Центрує контейнер по горизонталі на сторінці */
+  padding: 0 15px; /* Встановлює внутрішні відступи по 15px зліва та справа */
+  row-gap: 48px; /* Встановлює вертикальний проміжок між рядками у flex-контейнері */
+  display: flex; /* Застосовує flexbox для розташування елементів всередині */
+  flex-wrap: wrap; /* Дозволяє переносити елементи на новий рядок, якщо вони не вміщаються */
+}
+
+.team-title-vier {
+  font-family: "Roboto", sans-serif; /* Шрифт Roboto */
+  font-size: 36px; /* Розмір шрифту заголовка */
+  font-weight: 700; /* Жирний текст (700 — найвища жирність) */
+  line-height: 40px; /* Висота рядка */
+  letter-spacing: 0.02em; /* Міжлітерний інтервал */
+  text-align: center; /* Вирівнювання тексту по центру */
+  text-underline-position: from-font; /* Позиція підкреслення */
+  text-decoration-skip-ink: none; /* Не пропускати підкреслення через символи */
+  margin-top: 0; /* Видаляє верхній відступ */
+  margin-bottom: 72px; /* Відступ між заголовком і списком */
+  color: #333; /* Колір тексту */
+}
+
+.fourth-list {
+  display: flex; /* Встановлює Flexbox для вирівнювання елементів */
+  flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок */
+  margin-top: 0; /* Видаляє верхній відступ */
+  margin: 0; /* Забираємо зовнішні відступи */
+  margin-bottom: 72px; /* Відступ між заголовком і списком */
+  padding: 0; /* Обнулює внутрішні відступи */
+  list-style-type: none; /* Видаляє маркери списку */
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+/* Список елементів */
+ul.team-title-vier {
+  display: flex; /* Використання Flexbox */
+  flex-wrap: wrap; /* Перенос елементів */
+  column-gap: 24px; /* Горизонтальні відступи між елементами */
+  row-gap: 48px; /* Вертикальні відступи між рядками */
+  padding: 0; /* Скидання відступів списку */
+  margin: 0; /* Скидання полів списку */
+  list-style: none; /* Видалення маркерів списку */
+}
+
+.addition {
+  padding: 32px 16px; /* Відступи від країв контейнера */
+  border: 1px solid #e7e9fc; /* Стиль обводки по периметру */
+  border-top: none; /* Скидання обводки для верхнього краю */
+  text-align: left; /* Вирівнювання тексту по лівому краю */
+}
