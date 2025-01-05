@@ -63,16 +63,7 @@ body {
   display: inline-block;
 }
 
-.webstudio-link-footer {
-  font-family: "Raleway", sans-serif; /* Шрифт для посилання */
-  font-weight: 700; /* Жирність шрифту */
-  font-size: 18px; /* Розмір шрифту */
-  line-height: 1.17; /* Висота рядка */
-  letter-spacing: 0.03em; /* Відстань між літерами */
-  text-transform: uppercase; /* Перетворює текст на великі літери */
-  color: #4d5ae5; /* Колір тексту */
-  text-decoration: none; /* Вимикає підкреслення */
-  display: inline-block;
+.kolobok {
   margin-bottom: 16px;
 }
 
@@ -117,7 +108,7 @@ body {
   text-align: center; /* Вирівнює текст по центру по горизонталі */
   padding: 188px 0; /* Встановлює відступи: 188px зверху і знизу, 0px з боків */
   display: flex; /* Включає Flexbox для управління вирівнюванням вмісту */
-  }
+}
 
 .section-title {
   font-size: 56px; /* Розмір шрифту */
@@ -179,7 +170,7 @@ body {
   line-height: 1.2; /* Висота рядка */
   letter-spacing: 0.02em; /* Відстань між літерами */
   color: #2e2f42; /* Колір тексту */
-  }
+}
 
 .list-paragraph {
   font-size: 16px; /* Розмір шрифту */
@@ -274,7 +265,6 @@ body {
 
 .drei-list-section {
   flex-basis: calc((100% - 72px) / 4); /* Ширина елементів списку */
-  padding-left: 0; /* Відступ зліва */
   border-radius: 0px 0px 4px 4px; /* Закруглення нижніх кутів */
   background-color: #ffffff; /* Білий фон */
 }
@@ -482,9 +472,7 @@ body {
 .fourth-list {
   display: flex; /* Встановлює Flexbox для вирівнювання елементів */
   flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок */
-  margin-top: 0; /* Видаляє верхній відступ */
   margin: 0; /* Забираємо зовнішні відступи */
-  margin-bottom: 72px; /* Відступ між заголовком і списком */
   padding: 0; /* Обнулює внутрішні відступи */
   list-style-type: none; /* Видаляє маркери списку */
   column-gap: 24px;
@@ -512,7 +500,13 @@ ul.team-title-vier {
 /* Скидання геометрії для параграфів та заголовків */
 /* https://www.loom.com/share/15f56c19d2284f2db73c271adfddd3fa  - згідно рекомендацій ментора */
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
