@@ -8,6 +8,10 @@ body {
 /* Головний стиль для хедера */
 .main-header {
   border-bottom: 1px solid #e7e9fc; /* Нижня рамка */
+  background-color: #fff; /* Білий фон для контрасту */
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+              0px 1px 1px rgba(46, 47, 66, 0.16), 
+              0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /* Стиль для списку контактів */
@@ -510,3 +514,7 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+            0px 1px 1px rgba(46, 47, 66, 0.16), 
+            0px 1px 6px rgba(46, 47, 66, 0.08);
