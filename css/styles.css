@@ -515,6 +515,23 @@ ul.team-title-vier {
   list-style: none; /* Видалення маркерів списку */
 }
 
+.icon-container {
+  display: flex; /* Забезпечує можливість зміни розташування елементів */
+  align-items: center; /* Вирівнювання іконки по вертикалі */
+  justify-content: center; /* Вирівнювання іконки по горизонталі */
+  height: 112px; /* Висота блоку */
+  background-color: #f4f4fd; /* Колір фону блока */
+  border-radius: 4px; /* Закруглення кутів блока */
+  border: 1px solid #8e8f99; /* Обводка по периметру */
+  margin-bottom: 8px; /* Відступ між блоком та заголовком */
+}
+
+
+svg {
+  width: 64px;
+  height: 64px;
+}
+
 .addition {
   padding: 32px 16px; /* Відступи від країв контейнера */
   border: 1px solid #e7e9fc; /* Стиль обводки по периметру */
@@ -538,21 +555,3 @@ h6 {
 
 box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-
-  .icon-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    background-color: #f4f4fd;
-    border-radius: 4px;
-    border: 1px solid #8e8f99;
-    margin-bottom: 8px;
-  }
-
-  svg {
-    width: 64px;
-    height: 64px;
-  }
-
-  
