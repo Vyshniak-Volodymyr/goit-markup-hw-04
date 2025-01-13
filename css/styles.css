@@ -601,3 +601,17 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+.icon {
+  fill: currentColor; /* Наслідує колір тексту */
+  width: 32px; /* Ширина іконки */
+  height: 32px; /* Висота іконки */
+}
+
+.icon-home {
+  color: blue;
+}
+
+.icon-user {
+  color: green;
+}
