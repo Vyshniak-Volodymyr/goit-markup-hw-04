@@ -610,3 +610,10 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 .icon-user {
   color: green;
 }
+
+svg {
+  width: 64px;
+  height: 64px;
+}
+
+
