@@ -293,7 +293,6 @@ body {
   border-radius: 0px 0px 4px 4px; /* Закруглення нижніх кутів */
   background-color: #ffffff; /* Білий фон */
   gap: 24px;
- 
 }
 
 .drei-section {
@@ -631,7 +630,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   height: auto;
 }
 
-
 .drei-team-name {
   font-size: 1.2em;
   font-weight: bold;
@@ -647,7 +645,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 24px; 
+  gap: 24px;
   margin-top: 20px;
 }
 
@@ -675,5 +673,4 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   width: 32px;
   height: 32px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
