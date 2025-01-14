@@ -293,7 +293,6 @@ body {
   border-radius: 0px 0px 4px 4px; /* Закруглення нижніх кутів */
   background-color: #ffffff; /* Білий фон */
   gap: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .drei-section {
