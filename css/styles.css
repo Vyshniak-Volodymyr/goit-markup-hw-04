@@ -616,4 +616,57 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   height: 64px;
 }
 
+.block-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.team-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.drei-team-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.drei-team-role {
+  font-size: 1em;
+  color: gray;
+}
+
+.social-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Equal spacing between icons */
+  margin-top: 20px;
+}
+
+.social-item {
+  display: inline-block;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #0073e6; /* Blue background for circles */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  fill: #fff; /* White color for icons */
+  width: 16px;
+  height: 16px;
+}
 
