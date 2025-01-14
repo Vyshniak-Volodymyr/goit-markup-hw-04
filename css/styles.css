@@ -526,6 +526,7 @@ ul.team-title-vier {
   border-radius: 4px; /* Закруглення кутів */
   border: 1px solid #8e8f99; /* Обводка */
   margin-bottom: 8px; /* Відступ знизу */
+  gap: 24px;
 }
 
 .addition {
@@ -645,7 +646,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 20px; 
+  gap: 24px; 
   margin-top: 20px;
 }
 
