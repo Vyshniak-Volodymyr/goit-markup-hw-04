@@ -590,6 +590,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   display: grid;
   gap: 24px;
   display: flex;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -654,10 +655,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
 .social-item {
   display: inline-block;
-}
-
-.social-link {
-  text-decoration: none;
 }
 
 .circle {
