@@ -533,16 +533,6 @@ ul.team-title-vier {
   border: 1px solid #e7e9fc; /* Стиль обводки по периметру */
   border-top: none; /* Скидання обводки для верхнього краю */
   text-align: left; /* Вирівнювання тексту по лівому краю */
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  transform: translateY(100%); /* Початкове значення - сховане */
-  transition: transform 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.7); /* Темний фон з прозорістю */
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
 }
 
 /* Скидання геометрії для параграфів та заголовків */
@@ -587,7 +577,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   height: 40px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 /* Посилання в соцмережах */
 .social-link {
   display: flex;
@@ -676,42 +665,4 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   width: 32px;
   height: 32px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Section №4 */
-
-/* Основний стиль для елементів списку */
-.team-item {
-  transition: box-shadow 0.3s ease-in-out;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
-}
-
-/* Стиль для елемента списку при ховері */
-.team-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.team-item .addition {
-  position: absolute;
-  bottom: -100%; /* Ховаємо контейнер за межами видимої області */
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Темний фон з прозорістю */
-  color: #fff;
-  text-align: center;
-  transition: transform 0.3s ease, bottom 0.3s ease;
-}
-
-.team-item:hover .addition {
-  bottom: 0; /* Відображаємо контейнер */
-  transform: translateY(0%); /* Піднімаємо контейнер */
-}
-
-.block-image {
-  display: block;
-  width: 100%;
-  height: auto;
 }
