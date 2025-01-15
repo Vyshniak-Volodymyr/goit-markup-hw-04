@@ -674,11 +674,35 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 .team-item {
   transition: box-shadow 0.3s ease-in-out;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
 }
 
 /* Стиль для елемента списку при ховері */
 .team-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team-item .addition {
+  position: absolute;
+  bottom: -100%; /* Ховаємо контейнер за межами видимої області */
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Темний фон з прозорістю */
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease, bottom 0.3s ease;
+}
+
+.team-item:hover .addition {
+  bottom: 0; /* Відображаємо контейнер */
+  transform: translateY(0%); /* Піднімаємо контейнер */
+}
+
+.block-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
