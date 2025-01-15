@@ -577,6 +577,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   height: 40px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /* Посилання в соцмережах */
 .social-link {
   display: flex;
@@ -667,8 +668,16 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Section №4 */
+
+/* Основний стиль для елементів списку */
+.team-item {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Стиль для елемента списку при ховері */
 .team-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-              0px 1px 1px rgba(46, 47, 66, 0.16), 
-              0px 2px 1px rgba(46, 47, 66, 0.08);
-} 
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
