@@ -264,11 +264,12 @@ body {
 }
 
 /* Тінь при ховері */
+/* Тінь при ховері */
 .team-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-              0px 1px 1px rgba(46, 47, 66, 0.16), 
-              0px 2px 1px rgba(46, 47, 66, 0.08);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-name {
@@ -539,26 +540,18 @@ ul.team-title-vier {
   gap: 24px;
 }
 
+/* Стиль для тексту в контейнері .addition */
 .addition {
-  padding: 32px 16px; /* Відступи від країв контейнера */
-  border: 1px solid #e7e9fc; /* Стиль обводки по периметру */
-  border-top: none; /* Скидання обводки для верхнього краю */
-  text-align: left; /* Вирівнювання тексту по лівому краю */
-
-  /* 16.01.2024  20 22*/
-
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
+  background: rgba(0, 0, 0, 0.6); /* Напівпрозорий чорний фон */
+  color: #fff; /* Білий колір тексту */
   text-align: center;
   padding: 10px;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms;
 }
 
   /* 16.01.2024  20 22*/
@@ -566,8 +559,8 @@ ul.team-title-vier {
 /* Показуємо текст при наведенні */
 .team-item:hover .addition {
   transform: translateY(0%);
+  color: #fff; /* Залишається білим при ховері */
 }
-
 /* Скидання геометрії для параграфів та заголовків */
 /* https://www.loom.com/share/15f56c19d2284f2db73c271adfddd3fa  - згідно рекомендацій ментора */
 
