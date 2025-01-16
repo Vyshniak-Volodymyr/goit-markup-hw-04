@@ -258,6 +258,14 @@ body {
   width: calc(
     (100% - 48px) / 3
   ); /* Встановлюємо ширину з урахуванням відступів */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Плавний перехід для тіні та анімації */
+}
+
+.team-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+              0px 1px 1px rgba(46, 47, 66, 0.16), 
+              0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(-4px); /* Легке підняття елемента для більшого ефекту */
 }
 
 .team-name {
