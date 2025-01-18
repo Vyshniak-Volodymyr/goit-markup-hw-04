@@ -402,12 +402,9 @@ body {
   transition: transform 0.3s ease; /* Плавний перехід */
 }
 
-/* Ховер на елемент списку */
-.team-role:hover {
-  transform: translateY(0);
+.team-item:hover .team-role {
+  transform: translateY(0%);
 }
-
-
 
 /* Четверта секція (портфоліо) */
 .team-section-portfolio {
