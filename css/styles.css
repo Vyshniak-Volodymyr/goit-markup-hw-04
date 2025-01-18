@@ -173,10 +173,6 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавний перехід кольору */
 }
 
-.action-button:hover {
-  background-color: #3a46c0; /* Зміна фону кнопки при наведенні */
-}
-
 .action-button:hover,
 .action-button:focus {
   background-color: #404bbf; /* Колір фону при наведенні або фокусі */
