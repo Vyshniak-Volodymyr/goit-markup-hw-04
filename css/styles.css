@@ -543,16 +543,17 @@ ul.team-title-vier {
 
 /* Стиль для тексту в контейнері .addition */
 .addition {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Напівпрозорий чорний фон */
-  color: #fff; /* Білий колір тексту */
-  text-align: center;
-  padding: 10px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms;
+  
+  bottom: 0; /* Відступ від нижнього краю контейнера */
+  left: 0; /* Відступ від лівого краю контейнера */
+  width: 100%; /* Ширина елемента займає 100% ширини контейнера */
+  
+  color: #922c2c; /* Білий колір тексту у форматі HEX */
+  text-align: center; /* Текст вирівняний по центру горизонтально */
+  padding: 10px; /* Внутрішній відступ (padding) 10 пікселів з усіх боків */
+ 
 }
+
 
 /* 16.01.2024  20 22*/
 
