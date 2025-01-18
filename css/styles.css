@@ -484,6 +484,18 @@ body {
 
 /* Четверта секція */
 
+/* Базовий стиль для параграфів */
+.team-item .team-role {
+  transform: translateY(100%);
+  transition: transform 0.3s ease; /* Плавний перехід */
+}
+
+/* Ховер на елемент списку */
+.team-item:hover .team-role {
+  transform: translateY(0%);
+}
+
+
 .container-vier {
   width: 1158px; /* Встановлює фіксовану ширину для контейнера */
   margin: 0 auto; /* Центрує контейнер по горизонталі на сторінці */
