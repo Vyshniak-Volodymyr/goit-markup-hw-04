@@ -409,10 +409,6 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна поява тіні */
 }
 
-.team-item:hover {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Тінь при наведенні */
-}
-
 /* END. Четверта секція. Експеримент. END */
 .team-title {
   font-size: 36px; /* Задайте розмір шрифту заголовка */
