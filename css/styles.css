@@ -173,6 +173,10 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавний перехід кольору */
 }
 
+.action-button:hover {
+  background-color: #3a46c0; /* Зміна фону кнопки при наведенні */
+}
+
 .action-button:hover,
 .action-button:focus {
   background-color: #404bbf; /* Колір фону при наведенні або фокусі */
@@ -251,18 +255,20 @@ body {
 
 /* Загальний стиль для пунктів списку */
 .team-item {
-  width: calc((100% - 48px) / 3); /* Ширина елемента */
-  position: relative; /* Відносне позиціонування */
-  overflow: hidden; /* Приховує зайвий вміст */
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавний перехід для тіні */
+  width: calc(
+    (100% - 48px) / 3
+  ); /* Встановлюємо ширину елемента як одну третину від ширини контейнера, з урахуванням відступів */
+  position: relative; /* Встановлюємо відносне позиціонування для того, щоб додаткові вкладені елементи могли позиціонуватися відносно цього блоку */
+  overflow: hidden; /* Приховуємо будь-який вміст, що виходить за межі елемента */
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавний перехід для властивості box-shadow із кривою Безьє */
+  transition: box-shadow 0.3s ease; /* Плавний перехід для властивості box-shadow із простою функцією ease */
 }
 
+/* Тінь при ховері */
 .team-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-              0px 1px 1px rgba(46, 47, 66, 0.16), 
-              0px 2px 1px rgba(46, 47, 66, 0.08); /* Тінь при ховері */
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
 
 .team-name {
   margin: 0; /* Обнуляє всі відступи */
@@ -394,6 +400,15 @@ body {
 /* Ефект при наведенні */
 .team-item:hover .description {
   transform: translateY(0); /* Переміщуємо текст у видиму область */
+}
+
+/* Ефект для картки */
+.team-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна поява тіні */
+}
+
+.team-item:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Тінь при наведенні */
 }
 
 /* END. Четверта секція. Експеримент. END */
