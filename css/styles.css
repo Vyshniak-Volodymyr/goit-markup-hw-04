@@ -126,21 +126,21 @@ body {
 
 /* Перша секція */
 .main-section {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/img-name.jpeg);
+  background-image: url('https://s3-alpha-sig.figma.com/img/7c8d/46d4/7e83b6c8ee4603ea892aa8aaebb3c5fe?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fEbC2XY52ZThzmdhTt9ySB5wAe2asMvFu0aa5XIEHmlAVgMGQOnMR~0rpx9asZldRjqYAG0QmtUjIFrcTKLvbNtL14YZ7cqsb2Qzt3x74WquPgUEaswYDm4qV4egEm5c1Kt9a4DAvJ9yZxl2b1Sp-qzQv76~sX4Xn3s0pR642wLTMAu5uqD-RFjIUai7YOioZERcRJuUTxgRLEZITy8KjuYFNjMtgXZ1E5~FMiYnOQs8hI5iuaIsMt9zFe2~Dw6et8N-8bEySAMWUpRU1aO-q3caPkbZ07PHSymPgOSeqTaruAwV0gNKEDgXdx6mTifTNIkVV-6xEftg-RP8NmhI9g__');
   background-repeat: no-repeat; /* Уникнення повторення фонового зображення */
   background-position: center; /* Вирівнювання зображення по центру */
   background-size: cover; /* Позиціонування зображення на всю площу */
   max-width: 1440px; /* Максимальна ширина секції */
+  height: 600px; /* Фіксована висота секції */
   background-color: #2e2f42; /* Темний колір для резервного фону */
   text-align: center; /* Центрування тексту */
-  padding: 188px 0; /* Відступи зверху і знизу */
   display: flex; /* Використання Flexbox */
+  align-items: center; /* Вертикальне вирівнювання тексту */
+  justify-content: center; /* Горизонтальне вирівнювання тексту */
   margin: 0 auto; /* Центрування секції */
 }
+
+
 
 .section-title {
   font-size: 56px; /* Розмір шрифту */
@@ -671,7 +671,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
 .social-link:hover,
 .social-link:focus {
-  background-color: #404bbf;;
+  background-color: #404bbf;
 }
 
 /* Іконка соцмереж */
