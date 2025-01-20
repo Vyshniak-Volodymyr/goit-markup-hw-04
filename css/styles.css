@@ -54,15 +54,16 @@ body {
 
 /* Логотип: хедер і футер */
 .webstudio-link {
-  font-family: "Raleway", sans-serif; /* Шрифт для логотипу */
-  font-weight: 700; /* Жирність тексту */
-  font-size: 18px; /* Розмір шрифту */
-  line-height: 1.17; /* Висота рядка */
-  letter-spacing: 0.03em; /* Відстань між символами */
-  text-transform: uppercase; /* Перетворення тексту у верхній регістр */
-  color: #4d5ae5; /* Колір тексту */
-  text-decoration: none; /* Відсутність підкреслення */
-  display: inline-block; /* Відображення як інлайн-блок */
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .kolobok {
@@ -266,9 +267,8 @@ body {
 
 /* Тінь при ховері */
 .team-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-              0px 1px 1px rgba(46, 47, 66, 0.16), 
-              0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -474,8 +474,13 @@ body {
 
 /* Футер */
 .site-footer {
-  background-color: #2e2f42; /* Фон футера */
+  background-color: #2e2f42;
   padding: 100px 0;
+  color: #f4f4fd;
+}
+
+.content-wrapper {
+  margin-right: 120px;
 }
 
 /* Опис у футері */
@@ -492,6 +497,21 @@ body {
   text-underline-position: from-font; /* Позиція підкреслення від шрифта */
   text-decoration-skip-ink: none; /* Пропуск чорнила для підкреслення */
   color: #f4f4fd; /* Колір тексту */
+}
+
+.social-media-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color, #ffffff);
+  margin-bottom: 16px;
 }
 
 /* Колір тексту для логотипа в футері */
@@ -646,11 +666,12 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   gap: 24px;
   display: flex;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--link-bg, #4d5ae5);
 }
 
 .social-link:hover,
 .social-link:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
 
 /* Іконка соцмереж */
@@ -720,4 +741,5 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   width: 32px;
   height: 32px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--icon-color, #f4f4fd);
 }
