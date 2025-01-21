@@ -45,7 +45,7 @@ body {
   width: 1158px; /* Фіксована ширина контейнера */
   margin: 0 auto; /* Центрування по горизонталі */
   padding: 0 15px; /* Внутрішні відступи по горизонталі */
-  }
+}
 
 .nav-container {
   display: flex; /* Встановлює флексбокс для елементів */
@@ -506,11 +506,7 @@ body {
 .social-media-wrapper {
   display: flex; /* Встановлює гнучке (flex) відображення для контейнера, щоб можна було розташовувати елементи в рядок або стовпець. */
   flex-direction: column; /* Вказує, що елементи у flex-контейнері будуть розташовані у стовпець. */
-  display: flex;
-  align-items: baseline;
-
-    }
-
+}
 
 .social-text {
   font-weight: 500;
