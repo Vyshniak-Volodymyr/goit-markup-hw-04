@@ -666,6 +666,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   height: 40px; /* Висота елемента: 40 пікселів */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавний перехід для зміни кольору фону */
   display: inline-block; /* Відображення елемента як inline-block */
+  gap: 16px;
 }
 
 /* Посилання в соцмережах */
