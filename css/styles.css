@@ -514,17 +514,18 @@ body {
 .social-media-wrapper {
   display: flex; /* Встановлює гнучке (flex) відображення для контейнера, щоб можна було розташовувати елементи в рядок або стовпець. */
   flex-direction: column; /* Вказує, що елементи у flex-контейнері будуть розташовані у стовпець. */
-  text-align: right;
 }
 
 .social-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--text-color, #ffffff);
-  margin-bottom: 16px;
-
+  font-weight: 500; /* Напівжирний текст */
+  font-size: 16px; /* Розмір шрифту: 16 пікселів */
+  line-height: 1.5; /* Міжрядковий інтервал: 1.5 (150% від розміру шрифту) */
+  letter-spacing: 0.02em; /* Інтервал між літерами: 0.02 ем */
+  color: var(
+    --text-color,
+    #ffffff
+  ); /* Колір тексту: змінна (--text-color), за замовчуванням білий */
+  margin-bottom: 16px; /* Нижній відступ: 16 пікселів */
 }
 
 /* Колір тексту для логотипа в футері */
