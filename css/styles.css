@@ -47,6 +47,14 @@ body {
   padding: 0 15px; /* Внутрішні відступи по горизонталі */
 }
 
+.container-footer {
+  width: 1158px; /* Фіксована ширина контейнера */
+  margin: 0 auto; /* Центрування по горизонталі */
+  padding: 0 15px; /* Внутрішні відступи по горизонталі */
+  display: flex;
+  align-items: baseline;
+}
+
 .nav-container {
   display: flex; /* Встановлює флексбокс для елементів */
   align-items: center; /* Вирівнює елементи по вертикалі */
