@@ -96,8 +96,14 @@ body {
 }
 
 /* Стиль для навігаційного посилання Studio */
-.nav-link.studio {
+.studio {
   color: #404bbf; /* Синій колір для Studio */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf; /* Колір при наведенні або фокусі */
 }
 
 /* Псевдоелемент тільки для Studio */
