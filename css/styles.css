@@ -88,14 +88,20 @@ body {
   font-size: 16px; /* Розмір шрифту */
   line-height: 1.5; /* Висота рядка */
   letter-spacing: 0.02em; /* Відстань між символами */
-  color: #2e2f42; /* Колір тексту */
+  color: #2e2f42; /* Колір тексту за замовчуванням (чорний) */
   text-decoration: none; /* Відсутність підкреслення */
   padding: 24px 0; /* Відступи зверху і знизу */
   display: block; /* Відображення як блочний елемент */
   position: relative; /* Для відносного позиціонування псевдоелемента */
 }
 
-.nav-link::after {
+/* Стиль для навігаційного посилання Studio */
+.nav-link.studio {
+  color: #404bbf; /* Синій колір для Studio */
+}
+
+/* Псевдоелемент тільки для Studio */
+.nav-link.studio::after {
   content: ""; /* Порожній вміст для псевдоелемента */
   width: 100%; /* Ширина псевдоелемента */
   position: absolute; /* Абсолютне позиціонування */
@@ -104,21 +110,13 @@ body {
   height: 4px; /* Висота псевдоелемента */
   background-color: #404bbf; /* Колір фону псевдоелемента */
   border-radius: 2px; /* Округлення кутів */
-  opacity: 0; /* Початкова прозорість */
+  opacity: 1; /* Видимість псевдоелемента */
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація зміни прозорості */
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #404bbf; /* Колір при наведенні або фокусі */
-}
-
-.nav-link:hover::after {
-  opacity: 1; /* Відображення псевдоелемента при наведенні */
 }
 
 /* Стиль для посилання в контактах */
 .contact-link {
+  font-style: normal; /* Відключення курсива */
   font-size: 16px; /* Розмір шрифту */
   line-height: 1.5; /* Висота рядка */
   color: #434455; /* Колір тексту */
@@ -142,13 +140,14 @@ body {
   background-position: center;
   background-size: cover;
   max-width: 1440px;
-  height: 600px;
   background-color: #2e2f42;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  padding-top: 180px;
+  padding-bottom: 180px;
 }
 
 .section-title {
@@ -204,6 +203,7 @@ body {
   line-height: 1.2; /* Висота рядка */
   letter-spacing: 0.02em; /* Відстань між літерами */
   color: #2e2f42; /* Колір тексту */
+  margin-top: 8px;
 }
 
 .list-paragraph {
@@ -301,8 +301,8 @@ body {
 
 /* Контейнер для імені та посади */
 .team-info {
-  padding: 32px 0; /* Аналог: padding-top: 32px; padding-bottom: 32px; */
-  padding-bottom: 32px;
+  padding: 32px 0; /* Встановлює відступи зверху та знизу по 32px, зліва та справа - 0 */
+  padding-bottom: 32px; /* Встановлює відступ знизу на 32px, що дублює попередній відступ для зручності */
 }
 
 .drei-list-section:first-child .drei-image-container {
@@ -536,12 +536,6 @@ body {
 
 /* Зображення - блочний контейнер */
 .image-container {
-  max-width: 600px; /* Максимальна ширина контейнера */
-  padding-left: 15px; /* Відступ зліва */
-  padding-right: 15px; /* Відступ справа */
-  margin-left: auto; /* Центрування контейнера */
-  margin-right: auto; /* Центрування контейнера */
-  /* Контейнер для зображення */
   position: relative; /* Встановлюємо відносне позиціонування */
   overflow: hidden; /* Приховуємо вміст за межами контейнера */
 }
@@ -613,13 +607,14 @@ ul.team-title-vier {
 
 /* Стиль для тексту в контейнері .addition */
 .addition {
-  bottom: 0; /* Відступ від нижнього краю контейнера */
-  left: 0; /* Відступ від лівого краю контейнера */
+  /* bottom: 0;  Відступ від нижнього краю контейнера */
+  /* left: 0;  Відступ від лівого краю контейнера */
   width: 100%; /* Ширина елемента займає 100% ширини контейнера */
-
   color: #922c2c; /* Білий колір тексту у форматі HEX */
-  text-align: center; /* Текст вирівняний по центру горизонтально */
-  padding: 10px; /* Внутрішній відступ (padding) 10 пікселів з усіх боків */
+  padding: 32px 16px; /* Внутрішній відступ (padding) 10 пікселів з усіх боків */
+  border-left: 2px solid rgb(231, 233, 252, 1);
+  border-right: 2px solid rgb(231, 233, 252, 1);
+  border-bottom: 2px solid rgb(231, 233, 252, 1);
 }
 
 /* 16.01.2024  20 22*/
@@ -656,7 +651,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   display: flex; /* Задає флексбокс-контейнер для елементів списку */
   justify-content: center; /* Вирівнює елементи по центру по горизонталі */
   gap: 24px; /* Відстань між елементами списку */
-  margin-top: 20px; /* Додає зовнішній відступ зверху списку */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація зміни кольору фону з плавним переходом */
   gap: 24px;
 }
@@ -668,8 +662,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   margin: 0; /* Видаляє зовнішні відступи списку */
   display: flex; /* Задає флексбокс-контейнер для елементів списку */
   justify-content: center; /* Вирівнює елементи по центру по горизонталі */
-  gap: 24px; /* Відстань між елементами списку */
-  margin-top: 20px; /* Додає зовнішній відступ зверху списку */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація зміни кольору фону з плавним переходом */
   gap: 16px;
 }
@@ -762,6 +754,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 .drei-team-role {
   font-size: 1em;
   color: gray;
+  margin-bottom: 8px;
 }
 
 .circle {
@@ -777,8 +770,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
 .social-icon-footer {
   fill: var(--icon-color, #f4f4fd);
-  width: 32px;
-  height: 32px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--icon-color, #f4f4fd);
 }
